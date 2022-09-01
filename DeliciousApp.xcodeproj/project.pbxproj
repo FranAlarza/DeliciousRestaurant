@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260C8BBC28C1131C004F9DB2 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C8BBB28C1131C004F9DB2 /* CustomView.swift */; };
 		26BAE1BF28C014C7001D131E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1BE28C014C7001D131E /* AppDelegate.swift */; };
 		26BAE1C128C014C7001D131E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1C028C014C7001D131E /* SceneDelegate.swift */; };
 		26BAE1C628C014C7001D131E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BAE1C428C014C7001D131E /* Main.storyboard */; };
@@ -20,6 +21,11 @@
 		26BAE1F728C01697001D131E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1F528C01697001D131E /* CollectionViewCell.swift */; };
 		26BAE1F828C01697001D131E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BAE1F628C01697001D131E /* CollectionViewCell.xib */; };
 		26BAE1FB28C01843001D131E /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1FA28C01843001D131E /* OnboardingModel.swift */; };
+		26FF2CCF28C0F789000D31D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF2CCE28C0F789000D31D2 /* HomeViewController.swift */; };
+		26FF2CD628C0FA43000D31D2 /* FoodCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF2CD428C0FA43000D31D2 /* FoodCategoryCollectionViewCell.swift */; };
+		26FF2CD728C0FA43000D31D2 /* FoodCategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FF2CD528C0FA43000D31D2 /* FoodCategoryCollectionViewCell.xib */; };
+		26FF2CD928C0FF49000D31D2 /* DishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF2CD828C0FF49000D31D2 /* DishModel.swift */; };
+		26FF2CDC28C100F2000D31D2 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF2CDB28C100F2000D31D2 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		260C8BBB28C1131C004F9DB2 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		26BAE1BB28C014C7001D131E /* DeliciousApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BAE1BE28C014C7001D131E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26BAE1C028C014C7001D131E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +64,11 @@
 		26BAE1F528C01697001D131E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		26BAE1F628C01697001D131E /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		26BAE1FA28C01843001D131E /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		26FF2CCE28C0F789000D31D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		26FF2CD428C0FA43000D31D2 /* FoodCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		26FF2CD528C0FA43000D31D2 /* FoodCategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		26FF2CD828C0FF49000D31D2 /* DishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishModel.swift; sourceTree = "<group>"; };
+		26FF2CDB28C100F2000D31D2 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +101,6 @@
 			children = (
 				26BAE1F228C015E8001D131E /* Cells */,
 				26BAE1F328C01616001D131E /* OnboardingViewController.swift */,
-				26BAE1C428C014C7001D131E /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,8 +144,9 @@
 		26BAE1BD28C014C7001D131E /* DeliciousApp */ = {
 			isa = PBXGroup;
 			children = (
+				26FF2CDA28C100D0000D31D2 /* Extensions */,
 				26897D7228C01C5E0020A3AF /* App */,
-				26BAE1F128C015D9001D131E /* Onboarding */,
+				26FF2CCC28C0F740000D31D2 /* UI */,
 				26BAE1CA28C014C9001D131E /* Assets.xcassets */,
 				26BAE1CC28C014C9001D131E /* LaunchScreen.storyboard */,
 				26BAE1CF28C014C9001D131E /* Info.plist */,
@@ -185,6 +197,68 @@
 				26BAE1FA28C01843001D131E /* OnboardingModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		26FF2CCC28C0F740000D31D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				26BAE1C428C014C7001D131E /* Main.storyboard */,
+				26BAE1F128C015D9001D131E /* Onboarding */,
+				26FF2CCD28C0F764000D31D2 /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		26FF2CCD28C0F764000D31D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				26FF2CD128C0F9E3000D31D2 /* Models */,
+				26FF2CD228C0F9EB000D31D2 /* Cells */,
+				26FF2CD028C0F9D7000D31D2 /* Controllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		26FF2CD028C0F9D7000D31D2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26FF2CCE28C0F789000D31D2 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26FF2CD128C0F9E3000D31D2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26FF2CD828C0FF49000D31D2 /* DishModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26FF2CD228C0F9EB000D31D2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				26FF2CD328C0FA06000D31D2 /* FoodCategoryCVCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		26FF2CD328C0FA06000D31D2 /* FoodCategoryCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				26FF2CD428C0FA43000D31D2 /* FoodCategoryCollectionViewCell.swift */,
+				26FF2CD528C0FA43000D31D2 /* FoodCategoryCollectionViewCell.xib */,
+				260C8BBB28C1131C004F9DB2 /* CustomView.swift */,
+			);
+			path = FoodCategoryCVCell;
+			sourceTree = "<group>";
+		};
+		26FF2CDA28C100D0000D31D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				26FF2CDB28C100F2000D31D2 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26BAE1CE28C014C9001D131E /* LaunchScreen.storyboard in Resources */,
+				26FF2CD728C0FA43000D31D2 /* FoodCategoryCollectionViewCell.xib in Resources */,
 				26BAE1CB28C014C9001D131E /* Assets.xcassets in Resources */,
 				26BAE1F828C01697001D131E /* CollectionViewCell.xib in Resources */,
 				26BAE1C628C014C7001D131E /* Main.storyboard in Resources */,
@@ -319,11 +394,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FF2CDC28C100F2000D31D2 /* UIImageView+Extensions.swift in Sources */,
 				26BAE1F728C01697001D131E /* CollectionViewCell.swift in Sources */,
 				26BAE1FB28C01843001D131E /* OnboardingModel.swift in Sources */,
 				26BAE1BF28C014C7001D131E /* AppDelegate.swift in Sources */,
 				26BAE1C128C014C7001D131E /* SceneDelegate.swift in Sources */,
+				26FF2CD928C0FF49000D31D2 /* DishModel.swift in Sources */,
+				260C8BBC28C1131C004F9DB2 /* CustomView.swift in Sources */,
+				26FF2CD628C0FA43000D31D2 /* FoodCategoryCollectionViewCell.swift in Sources */,
 				26BAE1C928C014C7001D131E /* DeliciousApp.xcdatamodeld in Sources */,
+				26FF2CCF28C0F789000D31D2 /* HomeViewController.swift in Sources */,
 				26BAE1F428C01616001D131E /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

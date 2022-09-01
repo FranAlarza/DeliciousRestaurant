@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCategoryCollectionViewCell" id="gTV-IL-0wX" customClass="FoodCategoryCollectionViewCell" customModule="DeliciousApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbe-Vj-lvK" customClass="CustomView" customModule="DeliciousApp" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="56"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GoM-Ow-nLU">
+                                <rect key="frame" x="8" y="8" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1cD-SH-JvC"/>
+                                    <constraint firstAttribute="width" constant="40" id="pfY-3X-0ba"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNC-wI-ZGs">
+                                <rect key="frame" x="56" y="8" width="86" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JNC-wI-ZGs" firstAttribute="top" secondItem="nbe-Vj-lvK" secondAttribute="top" constant="8" id="7E3-p6-QTp"/>
+                            <constraint firstAttribute="width" constant="150" id="9Ki-n9-MYv"/>
+                            <constraint firstAttribute="bottom" secondItem="GoM-Ow-nLU" secondAttribute="bottom" constant="8" id="9pR-Xd-h56"/>
+                            <constraint firstAttribute="trailing" secondItem="JNC-wI-ZGs" secondAttribute="trailing" constant="8" id="DOV-7h-Y6q"/>
+                            <constraint firstItem="GoM-Ow-nLU" firstAttribute="top" secondItem="nbe-Vj-lvK" secondAttribute="top" constant="8" id="LxO-xt-5xx"/>
+                            <constraint firstAttribute="height" constant="56" id="Qx4-hK-fQZ"/>
+                            <constraint firstItem="JNC-wI-ZGs" firstAttribute="centerY" secondItem="GoM-Ow-nLU" secondAttribute="centerY" id="hvg-wb-Qqg"/>
+                            <constraint firstAttribute="bottom" secondItem="JNC-wI-ZGs" secondAttribute="bottom" constant="8" id="sDz-qh-ZDu"/>
+                            <constraint firstItem="GoM-Ow-nLU" firstAttribute="leading" secondItem="nbe-Vj-lvK" secondAttribute="leading" constant="8" id="t9c-y3-9cP"/>
+                            <constraint firstItem="GoM-Ow-nLU" firstAttribute="centerY" secondItem="nbe-Vj-lvK" secondAttribute="centerY" id="vep-ed-Aj3"/>
+                            <constraint firstItem="JNC-wI-ZGs" firstAttribute="leading" secondItem="GoM-Ow-nLU" secondAttribute="trailing" constant="8" id="xuo-tV-kAN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nbe-Vj-lvK" secondAttribute="bottom" id="E6N-t5-XrE"/>
+                <constraint firstItem="nbe-Vj-lvK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RDv-dc-Phf"/>
+                <constraint firstItem="nbe-Vj-lvK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VWe-tQ-Tex"/>
+                <constraint firstAttribute="trailing" secondItem="nbe-Vj-lvK" secondAttribute="trailing" id="YVf-sE-4aJ"/>
+            </constraints>
+            <size key="customSize" width="150" height="56"/>
+            <connections>
+                <outlet property="foodCategoryDescriptionLabel" destination="JNC-wI-ZGs" id="snB-UU-izz"/>
+                <outlet property="foodCategoryImageView" destination="GoM-Ow-nLU" id="Wtz-ws-Hb4"/>
+            </connections>
+            <point key="canvasLocation" x="120.28985507246378" y="107.14285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
