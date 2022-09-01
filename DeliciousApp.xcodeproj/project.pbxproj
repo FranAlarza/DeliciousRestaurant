@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		26BAE1BF28C014C7001D131E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1BE28C014C7001D131E /* AppDelegate.swift */; };
 		26BAE1C128C014C7001D131E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1C028C014C7001D131E /* SceneDelegate.swift */; };
-		26BAE1C328C014C7001D131E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1C228C014C7001D131E /* ViewController.swift */; };
 		26BAE1C628C014C7001D131E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BAE1C428C014C7001D131E /* Main.storyboard */; };
 		26BAE1C928C014C7001D131E /* DeliciousApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1C728C014C7001D131E /* DeliciousApp.xcdatamodeld */; };
 		26BAE1CB28C014C9001D131E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26BAE1CA28C014C9001D131E /* Assets.xcassets */; };
@@ -17,6 +16,10 @@
 		26BAE1D928C014C9001D131E /* DeliciousAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1D828C014C9001D131E /* DeliciousAppTests.swift */; };
 		26BAE1E328C014C9001D131E /* DeliciousAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1E228C014C9001D131E /* DeliciousAppUITests.swift */; };
 		26BAE1E528C014C9001D131E /* DeliciousAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1E428C014C9001D131E /* DeliciousAppUITestsLaunchTests.swift */; };
+		26BAE1F428C01616001D131E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1F328C01616001D131E /* OnboardingViewController.swift */; };
+		26BAE1F728C01697001D131E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1F528C01697001D131E /* CollectionViewCell.swift */; };
+		26BAE1F828C01697001D131E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BAE1F628C01697001D131E /* CollectionViewCell.xib */; };
+		26BAE1FB28C01843001D131E /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1FA28C01843001D131E /* OnboardingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		26BAE1BB28C014C7001D131E /* DeliciousApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BAE1BE28C014C7001D131E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26BAE1C028C014C7001D131E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26BAE1C228C014C7001D131E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26BAE1C528C014C7001D131E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26BAE1C828C014C7001D131E /* DeliciousApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeliciousApp.xcdatamodel; sourceTree = "<group>"; };
 		26BAE1CA28C014C9001D131E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		26BAE1DE28C014C9001D131E /* DeliciousAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliciousAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BAE1E228C014C9001D131E /* DeliciousAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliciousAppUITests.swift; sourceTree = "<group>"; };
 		26BAE1E428C014C9001D131E /* DeliciousAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliciousAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		26BAE1F328C01616001D131E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		26BAE1F528C01697001D131E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		26BAE1F628C01697001D131E /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		26BAE1FA28C01843001D131E /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26897D7128C01C420020A3AF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26BAE1F228C015E8001D131E /* Cells */,
+				26BAE1F328C01616001D131E /* OnboardingViewController.swift */,
+				26BAE1C428C014C7001D131E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26897D7228C01C5E0020A3AF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				26BAE1BE28C014C7001D131E /* AppDelegate.swift */,
+				26BAE1C028C014C7001D131E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		26897D7328C01EF50020A3AF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		26BAE1B228C014C7001D131E = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +133,8 @@
 		26BAE1BD28C014C7001D131E /* DeliciousApp */ = {
 			isa = PBXGroup;
 			children = (
-				26BAE1BE28C014C7001D131E /* AppDelegate.swift */,
-				26BAE1C028C014C7001D131E /* SceneDelegate.swift */,
-				26BAE1C228C014C7001D131E /* ViewController.swift */,
-				26BAE1C428C014C7001D131E /* Main.storyboard */,
+				26897D7228C01C5E0020A3AF /* App */,
+				26BAE1F128C015D9001D131E /* Onboarding */,
 				26BAE1CA28C014C9001D131E /* Assets.xcassets */,
 				26BAE1CC28C014C9001D131E /* LaunchScreen.storyboard */,
 				26BAE1CF28C014C9001D131E /* Info.plist */,
@@ -128,6 +158,33 @@
 				26BAE1E428C014C9001D131E /* DeliciousAppUITestsLaunchTests.swift */,
 			);
 			path = DeliciousAppUITests;
+			sourceTree = "<group>";
+		};
+		26BAE1F128C015D9001D131E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				26BAE1F928C01832001D131E /* Model */,
+				26897D7128C01C420020A3AF /* Views */,
+				26897D7328C01EF50020A3AF /* ViewModels */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		26BAE1F228C015E8001D131E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				26BAE1F528C01697001D131E /* CollectionViewCell.swift */,
+				26BAE1F628C01697001D131E /* CollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		26BAE1F928C01832001D131E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26BAE1FA28C01843001D131E /* OnboardingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +293,7 @@
 			files = (
 				26BAE1CE28C014C9001D131E /* LaunchScreen.storyboard in Resources */,
 				26BAE1CB28C014C9001D131E /* Assets.xcassets in Resources */,
+				26BAE1F828C01697001D131E /* CollectionViewCell.xib in Resources */,
 				26BAE1C628C014C7001D131E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BAE1C328C014C7001D131E /* ViewController.swift in Sources */,
+				26BAE1F728C01697001D131E /* CollectionViewCell.swift in Sources */,
+				26BAE1FB28C01843001D131E /* OnboardingModel.swift in Sources */,
 				26BAE1BF28C014C7001D131E /* AppDelegate.swift in Sources */,
 				26BAE1C128C014C7001D131E /* SceneDelegate.swift in Sources */,
 				26BAE1C928C014C7001D131E /* DeliciousApp.xcdatamodeld in Sources */,
+				26BAE1F428C01616001D131E /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,9 +504,9 @@
 				DEVELOPMENT_TEAM = F9QA4T4B5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeliciousApp/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,9 +532,9 @@
 				DEVELOPMENT_TEAM = F9QA4T4B5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeliciousApp/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
