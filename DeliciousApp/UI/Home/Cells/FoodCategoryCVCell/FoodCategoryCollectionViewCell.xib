@@ -29,7 +29,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNC-wI-ZGs">
                                 <rect key="frame" x="56" y="8" width="86" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -37,7 +37,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JNC-wI-ZGs" firstAttribute="top" secondItem="nbe-Vj-lvK" secondAttribute="top" constant="8" id="7E3-p6-QTp"/>
-                            <constraint firstAttribute="width" constant="150" id="9Ki-n9-MYv"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="9Ki-n9-MYv"/>
                             <constraint firstAttribute="bottom" secondItem="GoM-Ow-nLU" secondAttribute="bottom" constant="8" id="9pR-Xd-h56"/>
                             <constraint firstAttribute="trailing" secondItem="JNC-wI-ZGs" secondAttribute="trailing" constant="8" id="DOV-7h-Y6q"/>
                             <constraint firstItem="GoM-Ow-nLU" firstAttribute="top" secondItem="nbe-Vj-lvK" secondAttribute="top" constant="8" id="LxO-xt-5xx"/>

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		260C8BBC28C1131C004F9DB2 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C8BBB28C1131C004F9DB2 /* CustomView.swift */; };
+		2640368328C2BD9100389433 /* PopularDishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640368128C2BD9100389433 /* PopularDishesCollectionViewCell.swift */; };
+		2640368428C2BD9100389433 /* PopularDishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2640368228C2BD9100389433 /* PopularDishesCollectionViewCell.xib */; };
+		2640368628C2C0AA00389433 /* PopularDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640368528C2C0AA00389433 /* PopularDish.swift */; };
+		264036CD28C56CB400389433 /* ChefsSpecialsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264036CB28C56CB400389433 /* ChefsSpecialsCollectionViewCell.swift */; };
+		264036CE28C56CB400389433 /* ChefsSpecialsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264036CC28C56CB400389433 /* ChefsSpecialsCollectionViewCell.xib */; };
 		26BAE1BF28C014C7001D131E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1BE28C014C7001D131E /* AppDelegate.swift */; };
 		26BAE1C128C014C7001D131E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAE1C028C014C7001D131E /* SceneDelegate.swift */; };
 		26BAE1C628C014C7001D131E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26BAE1C428C014C7001D131E /* Main.storyboard */; };
@@ -47,6 +52,11 @@
 
 /* Begin PBXFileReference section */
 		260C8BBB28C1131C004F9DB2 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		2640368128C2BD9100389433 /* PopularDishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDishesCollectionViewCell.swift; sourceTree = "<group>"; };
+		2640368228C2BD9100389433 /* PopularDishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularDishesCollectionViewCell.xib; sourceTree = "<group>"; };
+		2640368528C2C0AA00389433 /* PopularDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDish.swift; sourceTree = "<group>"; };
+		264036CB28C56CB400389433 /* ChefsSpecialsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefsSpecialsCollectionViewCell.swift; sourceTree = "<group>"; };
+		264036CC28C56CB400389433 /* ChefsSpecialsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChefsSpecialsCollectionViewCell.xib; sourceTree = "<group>"; };
 		26BAE1BB28C014C7001D131E /* DeliciousApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliciousApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26BAE1BE28C014C7001D131E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26BAE1C028C014C7001D131E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +106,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2640368028C2BD0700389433 /* PopularDishesCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				2640368128C2BD9100389433 /* PopularDishesCollectionViewCell.swift */,
+				2640368228C2BD9100389433 /* PopularDishesCollectionViewCell.xib */,
+			);
+			path = PopularDishesCVCell;
+			sourceTree = "<group>";
+		};
+		264036CA28C56C6D00389433 /* ChefsSpecialsCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				264036CB28C56CB400389433 /* ChefsSpecialsCollectionViewCell.swift */,
+				264036CC28C56CB400389433 /* ChefsSpecialsCollectionViewCell.xib */,
+			);
+			path = ChefsSpecialsCVCell;
+			sourceTree = "<group>";
+		};
 		26897D7128C01C420020A3AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				26FF2CD828C0FF49000D31D2 /* DishModel.swift */,
+				2640368528C2C0AA00389433 /* PopularDish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				26FF2CD328C0FA06000D31D2 /* FoodCategoryCVCell */,
+				2640368028C2BD0700389433 /* PopularDishesCVCell */,
+				264036CA28C56C6D00389433 /* ChefsSpecialsCVCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -367,7 +398,9 @@
 			files = (
 				26BAE1CE28C014C9001D131E /* LaunchScreen.storyboard in Resources */,
 				26FF2CD728C0FA43000D31D2 /* FoodCategoryCollectionViewCell.xib in Resources */,
+				2640368428C2BD9100389433 /* PopularDishesCollectionViewCell.xib in Resources */,
 				26BAE1CB28C014C9001D131E /* Assets.xcassets in Resources */,
+				264036CE28C56CB400389433 /* ChefsSpecialsCollectionViewCell.xib in Resources */,
 				26BAE1F828C01697001D131E /* CollectionViewCell.xib in Resources */,
 				26BAE1C628C014C7001D131E /* Main.storyboard in Resources */,
 			);
@@ -395,13 +428,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				26FF2CDC28C100F2000D31D2 /* UIImageView+Extensions.swift in Sources */,
+				2640368628C2C0AA00389433 /* PopularDish.swift in Sources */,
 				26BAE1F728C01697001D131E /* CollectionViewCell.swift in Sources */,
+				2640368328C2BD9100389433 /* PopularDishesCollectionViewCell.swift in Sources */,
 				26BAE1FB28C01843001D131E /* OnboardingModel.swift in Sources */,
 				26BAE1BF28C014C7001D131E /* AppDelegate.swift in Sources */,
 				26BAE1C128C014C7001D131E /* SceneDelegate.swift in Sources */,
 				26FF2CD928C0FF49000D31D2 /* DishModel.swift in Sources */,
 				260C8BBC28C1131C004F9DB2 /* CustomView.swift in Sources */,
 				26FF2CD628C0FA43000D31D2 /* FoodCategoryCollectionViewCell.swift in Sources */,
+				264036CD28C56CB400389433 /* ChefsSpecialsCollectionViewCell.swift in Sources */,
 				26BAE1C928C014C7001D131E /* DeliciousApp.xcdatamodeld in Sources */,
 				26FF2CCF28C0F789000D31D2 /* HomeViewController.swift in Sources */,
 				26BAE1F428C01616001D131E /* OnboardingViewController.swift in Sources */,
